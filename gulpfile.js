@@ -117,7 +117,7 @@ function lang() {
 		.pipe(dest("lang/" + domain + ".pot"));
 }
 
-// Build zip
+// Build theme zip file
 function zip() {
 	return src([
 		"./**/*",
