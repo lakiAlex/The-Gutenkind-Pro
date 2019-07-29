@@ -97,22 +97,6 @@ if (class_exists('kirki')) {
 	    ),
 	) );
 
-	// Kirki::add_field( 'theme_mod', array(
-	// 	'type'        => 'toggle',
-	// 	'settings'    => 'header-adbar-hide-xs',
-	// 	'label'       => esc_html__( 'Hide Ad-Bar On Mobiles', 'gutenkind' ),
-	// 	'section'     => 'header_section',
-	// 	'default'     => true,
-	// 	'output'      => array(
-	// 		array(
-	// 			'element'       => '.header-placement',
-	// 			'property'      => 'display',
-	// 			'value_pattern' => 'none !important',
-	// 			'exclude'       => array( false ),
-	// 		),
-	// 	),
-	// ) );
-
 	// Header Style
 	Kirki::add_field( 'theme_mod', array(
 		'type'        => 'select',
