@@ -1,0 +1,79 @@
+.search__inner {
+	position: relative;
+	max-width: 750px;
+	margin: 60px auto;
+	.link, h5 {
+		display: none;
+	}
+}
+.search .search__input {
+	display: block;
+	width: 100%;
+	border: 1px solid;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-color: #e0e0e0;
+	font-size: 20px;
+	line-height: 1;
+	text-align: left;
+	padding: 0 12px 20px;
+	margin: 0 auto;
+	font-family: $font__heading;
+	font-weight: 700;
+}
+
+.search .search__input::-webkit-input-placeholder {
+	opacity: 0.3;
+	text-transform: none;
+}
+
+.search .search__input:-moz-placeholder {
+	opacity: 0.3;
+	text-transform: none;
+}
+
+.search .s::-moz-placeholder {
+	opacity: 0.3;
+	text-transform: none;
+}
+
+.search .s:-ms-input-placeholder {
+	opacity: 0.3;
+	text-transform: none;
+}
+
+.search .search__submit {
+	position: absolute;
+	right: 14px;
+	top: 0;
+	padding: 4px 10px;
+	background: none;
+	font-size: 11px;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	height: auto;
+	width: auto;
+	margin: 0 !important;
+	border: none;
+	cursor: pointer;
+	svg {
+		width: 20px;
+		height: 20px;
+		fill: #d8d8d8;
+		stroke: #d8d8d8;
+		@include transition();
+	}
+	svg:hover {
+		fill: #000;
+		stroke: #000;
+	}
+}
+.search__close {
+	display: none;
+}
+
+@import "buttons";
+@import "fields";
+@import "cookie-notice";

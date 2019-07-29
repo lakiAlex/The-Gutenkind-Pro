@@ -1,0 +1,10 @@
+.block-cat-posts {
+
+     overflow: hidden;
+
+     &.voss-sidebar-left,
+     &.voss-sidebar-right {
+         overflow: visible;
+     }
+
+}

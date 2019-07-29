@@ -1,0 +1,52 @@
+/* Cookie Bar */
+.cookie {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 26px;
+    z-index: 99;
+    width: 100%;
+    max-width: 360px;
+    color: #000;
+    margin: 20px;
+    box-shadow: 0 17px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    @media (max-width: 450px) {
+        margin: 20px auto;
+        max-width: 100%;
+        width: 90%;
+        right: 0;
+    }
+    p {
+        font-size: 13px;
+        line-height: 24px;
+        a {
+            box-shadow: 0 1px 0 0 #bfbfbf;
+        }
+    }
+    .button {
+        width: 100%;
+        text-align: center;
+        font-size: 10.3px !important;
+    }
+    &__close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        padding: 10px;
+        line-height: 10px;
+        font-size: 11px;
+        background: transparent;
+        outline: none;
+        border: none;
+        float: right;
+        cursor: pointer;
+        @include transition();
+        &:hover {
+            opacity: .6;
+            background: transparent;
+        }
+    }
+}

@@ -1,0 +1,280 @@
+
+html {
+	font-size: $font__size_base;
+}
+
+body {
+	color: $color__text-main;
+	font-family: $font__body;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: $font__line-height-body;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	//font-family: $font__body;
+	font-weight: 400;
+	line-height: $font__line-height-body;
+	text-rendering: optimizeLegibility;
+}
+
+.author-description .author-link,
+.comments-title,
+.comment-author .fn,
+.main-navigation,
+.no-comments,
+.not-found .page-title,
+.error-404 .page-title,
+.post-navigation .post-title,
+.page-links,
+.page-description,
+.site-title,
+.site-info,
+#cancel-comment-reply-link,
+img:after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__heading;
+}
+
+.pagination .nav-links {
+	font-family: $font__link;
+}
+
+.main-navigation,
+.page-description,
+.author-description .author-link,
+.not-found .page-title,
+.error-404 .page-title,
+.post-navigation .post-title,
+.comments-title,
+.comment-author .fn,
+.no-comments,
+.site-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: $font__line-height-heading;
+	@include antialiased();
+}
+
+.site-branding,
+.main-navigation ul.main-menu > li,
+.social-navigation,
+.author-description .author-bio,
+.nav-links {
+	line-height: 1.25;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 50px;
+
+	@media (min-width: 992px) {
+		font-size: 32px;
+		line-height: 36px;
+	}
+}
+
+.not-found .page-title,
+.error-404 .page-title,
+.has-larger-font-size {
+	font-size: $font__size-lg;
+
+	@media (min-width: 992px) {
+		font-size: $font__size-xl;
+	}
+}
+
+.has-regular-font-size,
+.has-large-font-size,
+h3 {
+	font-size: $font__size-lg;
+}
+
+.site-title,
+.site-description,
+.main-navigation,
+.nav-links,
+.page-title,
+.page-description,
+.comment-author .fn,
+.no-comments,
+h2.author-title,
+p.author-bio {
+	font-size: $font__size-md;
+}
+
+h5 {
+	font-size: $font__size-sm;
+}
+
+.entry-meta,
+.entry-footer,
+.site-info,
+.has-small-font-size,
+.sticky-post,
+#cancel-comment-reply-link,
+img:after,
+h6 {
+	font-size: 13px;
+}
+
+.site-title,
+.page-title {
+	font-weight: 700;
+}
+
+.page-description,
+.page-links a {
+	font-weight: 700;
+}
+
+.site-description {
+	letter-spacing: -0.01em;
+}
+
+.post-navigation .post-title,
+.entry-title,
+.not-found .page-title,
+.error-404 .page-title,
+.comments-title,
+blockquote {
+	hyphens: auto;
+	word-break: break-word;
+}
+
+/* Do not hyphenate entry title on tablet view and bigger. */
+.entry-title {
+	@media (min-width: 992px) {
+		hyphens: none;
+	}
+}
+
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+pre {
+	font-size: $font__size-sm;
+	font-family: $font__pre;
+	line-height: $font__line-height-body;
+	overflow: auto;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-size: $font__size-sm;
+	font-family: $font__code;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 38px;
+}
+h2 {
+	font-size: 28px;
+	line-height: 41px;
+}
+h3 {
+	font-size: 24px;
+	line-height: 34px;
+}
+h4 {
+	font-size: 18px;
+	line-height: 28px;
+}
+h5 {
+	font-size: 17px;
+	line-height: 27px;
+}
+h6 {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.font-xl {
+	font-size: 72px;
+	line-height: 1.25;
+	@media (max-width: 992px) {
+		font-size: 55px;
+	}
+	@media (max-width: 768px) {
+		font-size: 45px;
+	}
+	@media (max-width: 600px) {
+		font-size: 40px;
+	}
+}
+.font-xxl {
+	font-size: 100px;
+	line-height: 1.25;
+	@media (max-width: 992px) {
+		font-size: 55px;
+	}
+	@media (max-width: 768px) {
+		font-size: 45px;
+	}
+	@media (max-width: 600px) {
+		font-size: 40px;
+	}
+}
+
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+@include non-latin-fonts();

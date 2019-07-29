@@ -1,0 +1,33 @@
+/* Block editor preview */
+.acf-block-preview {
+	a {
+		pointer-events: none;
+		//cursor: not-allowed;
+	}
+	.voss-layout-grid,
+	.voss-layout-masonry {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: auto;
+		article {
+			width: 50%;
+			display: inline-block;
+			padding: 0 20px;
+		}
+		&[data-col="3"] {
+			article {
+				width: 33.33%;
+				padding: 0 30px;
+			}
+		}
+		&[data-col="4"] {
+			article {
+				width: 25%;
+				padding: 0 15px;
+			}
+		}
+		.post-content {
+			padding-top: 20px;
+		}
+	}
+}

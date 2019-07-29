@@ -1,0 +1,13 @@
+table {
+	margin-bottom: 30px;
+	border-collapse: collapse;
+	width: 100%;
+	//font-family: $font__body;
+
+	td,
+	th {
+		padding: 15px;
+		border: 1px solid $color__border;
+		word-break: break-all;
+	}
+}

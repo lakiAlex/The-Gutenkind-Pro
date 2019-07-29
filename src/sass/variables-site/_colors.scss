@@ -1,0 +1,46 @@
+
+// Backgrounds
+$color__background-body: #fff;
+$color__background-input: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #000;
+$color__background-button-hover: #231f20;
+$color__background-button-focus: #000;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__background_selection: mix( $color__background-body, $color__background-button, 75% ); // lighten( salmon, 22.5% ); // lighten( #0999d4, 48% );
+$color__bg_primary: #f5f5f5; //#f3efea; //#f1e8de;
+$color__bg_hover: #efefef; //#efdecd;
+$color__bg_grey: #efefef; //#f3efea; //#f1e8de;
+$color__bg_light: #f8f8f8;
+$color__bg_dark: #000;
+
+// Text
+$color__text-main: #000; //#231f20;
+$color__text_grey: #5f5f5f;
+
+$color__text-light: #908b86;
+$color__text-hover: #bbbdbd;
+$color__text-hover-dark: #000;
+$color__text-screen: #231f20;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+
+
+
+// Links
+$color__link: #231f20;
+$color__link-visited: #231f20;
+$color__link-hover: #bbbdbd;
+
+// Borders
+$color__border: rgba(119, 119, 119, 0.1); //#f2f2f2; //rgba(119,119,119,0.15); //#e8e6ec; #e0e0e0; //#eaeaea; #cfcfcf; //rgba(119,119,119,0.15); //#e0e0e0;
+$color__border-link: #231f20;
+$color__border-link-hover: #bbbdbd;
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: $color__border;
+$color__border-abbr: #666;
+$color__separator: #f2f2f2;

@@ -1,0 +1,101 @@
+/*
+Theme Name: Gutenkind
+Theme URI: https://gutenkind.vossenthemes.io
+Author: Vossen
+Author URI: https://themeforest.net/user/vossendesign/portfolio
+Description: A new Gutenberg-ready theme.
+Requires at least: WordPress 4.9.6
+Version: 1.0.1.3
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: gutenkind
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Normalize
+# Typography
+	## Headings
+	## Copy
+# Elements
+	## Lists
+	## Tables
+# Forms
+	## Buttons
+	## Fields
+# Navigation
+	## Links
+	## Menus
+	## Next & Previous
+# Accessibility
+# Alignments
+# Clearings
+# Layout
+# Widgets
+# Content
+	## Archives
+	## Posts and pages
+	## Comments
+# Blocks
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/* Normalize */
+
+@import "normalize/normalize";
+
+/* Typography */
+
+@import "typography/typography";
+
+/* Elements */
+
+@import "elements/elements";
+
+/* Forms */
+
+@import "forms/forms";
+
+/* Navigation */
+
+@import "navigation/navigation";
+
+/* Accessibility */
+
+@import "modules/accessibility";
+
+/* Alignments */
+
+@import "modules/alignments";
+
+/* Clearings */
+
+@import "modules/clearings";
+
+/* Layout */
+
+@import "layout/layout";
+
+/* Content */
+
+@import "site/site";
+
+/* Vendors */
+
+@import "vendors/vendors";
+
+/* Blocks */
+
+@import "blocks/blocks";
+
+/* Media */
+
+@import "media/media";

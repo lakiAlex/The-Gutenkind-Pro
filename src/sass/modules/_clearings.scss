@@ -1,0 +1,17 @@
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.footer:before,
+.footer:after {
+	@include clearfix;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.footer:after {
+	@include clearfix-after;
+}

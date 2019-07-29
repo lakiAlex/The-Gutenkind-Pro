@@ -1,0 +1,163 @@
+html {
+	box-sizing: border-box;
+}
+
+::-moz-selection {
+	background-color: $color__background_selection;
+}
+
+
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: $color__background-body;
+	@include antialiased();
+	overflow-x: hidden;
+}
+
+a {
+	color: $color__text-main;
+	@include transition();
+}
+
+a:hover,
+a:active {
+	color: $color__link-hover;
+	outline: none;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+	opacity: .6;
+
+	@include transition();
+}
+
+a svg:hover,
+a svg:active {
+	fill: $color__link-hover;
+	stroke: $color__link-hover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	margin: 16px 0;
+}
+
+hr {
+	background-color: $color__text-light;
+	border: 0;
+	height: 2px;
+}
+
+@import "lists";
+
+img {
+	height: auto;
+	max-width: 100%;
+	position: relative;
+}
+
+figure {
+	margin: 0;
+}
+
+blockquote {
+    position: relative;
+	&.is-style-large:before {
+		content: '';
+	    position: relative;
+	    background-image: url(dist/img/quotes.png);
+	    background-repeat: no-repeat;
+	    background-position: 50% 0;
+	    //color: #000;
+	    width: 36px;
+	    height: 36px;
+	    top: 0;
+	    left: 50%;
+	    margin-bottom: 10px;
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    opacity: .2;
+	    display: block;
+	}
+	> p {
+		font-family: $font__heading;
+		font-weight: 700;
+	    font-size: 31px;
+		line-height: 41px;
+	    letter-spacing: -.2px;
+	    margin: 0 auto;
+	    //color: #000;
+	}
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin-top: 10px;
+		margin-bottom: 0;
+		font-size: 16px;
+		font-weight: bold;
+		color: #111;
+	}
+	a {
+		border-bottom: 2px #eceeef solid;
+	}
+	cite {
+		padding-right: 40px;
+		display: block;
+		font-size: 10px;
+		text-transform: uppercase;
+		font-style: normal;
+		letter-spacing: 1px;
+		line-height: 1.4;
+		margin-top: 25px;
+		padding: 0;
+		a {
+			border: none !important;
+		}
+	}
+	&.is-style-large {
+		> p {
+			max-width: 637px;
+		}
+	}
+}
+
+pre,
+code {
+	display: block;
+	padding: 20px;
+	border: 1px solid $color__border;
+	margin: 20px 0;
+	font-size: 13px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	br {
+		display: none;
+	}
+}
+
+pre {
+	padding: 30px 50px;
+	border: none;
+	margin-bottom: 30px;
+}
+
+pre,
+del {
+    background-color: #f3f3f3;
+}
+
+@import "tables";

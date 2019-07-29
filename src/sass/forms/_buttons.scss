@@ -1,0 +1,142 @@
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+a.button,
+.btn,
+.wp-block-button__link {
+
+	// &:not(.has-background) {
+	// 	background-color: $color__background-button;
+	// }
+
+	// &:not(.has-text-color) {
+	// 	color: white;
+	// }
+
+	display: inline-block;
+	@include button-transition;
+	//background: $color__background-button;
+	border: none;
+	border-radius: 0px;
+	box-sizing: border-box;
+	color: $color__background-body;
+	//font-family: $font__link;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 34px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	outline: none;
+	padding: 4px 30px 3px;
+	text-decoration: none;
+	vertical-align: bottom;
+	box-shadow: none;
+	height: auto;
+	text-rendering: optimizeLegibility!important;
+	-webkit-font-smoothing: antialiased!important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	&:hover {
+		//background: $color__background-button-hover;
+		color: $color__background-body;
+		cursor: pointer;
+	}
+
+	&:visited {
+		//color: $color__background-body;
+		text-decoration: none;
+	}
+
+	&:focus {
+		//background: $color__background-button-focus;
+		outline: none;
+	}
+}
+
+.button,
+.wp-block-button {
+
+	&:not(.is-style-squared) .wp-block-button__link {
+		border-radius: 3px;
+	}
+
+	&.is-style-outline .wp-block-button__link,
+	&.is-style-outline .wp-block-button__link:focus,
+	&.is-style-outline .wp-block-button__link:active {
+		@include button-all-transition;
+		border-width: 2px;
+		border-style: solid;
+
+		&:not(.has-background) {
+			background: transparent;
+		}
+
+		&:not(.has-text-color) {
+			color: $color__background-button;
+			border-color: currentColor;
+		}
+	}
+
+	&.is-style-outline .wp-block-button__link:hover {
+		color: white;
+		border-color: $color__background-button-hover;
+	}
+}
+
+.wp-block-button__link {
+	background-color: #000;
+	@include transition();
+	&:hover {
+		transform: translateY(-5px);
+		opacity: .8;
+	}
+}
+
+.link {
+	position: relative;
+	font-size: 10.1px;
+	line-height: 13px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-bottom: 8px;
+	border-bottom: 1px solid;
+	border-color: $color__border;
+	text-decoration: none;
+	background-color: transparent;
+	color: $color__text-main;
+	-webkit-text-stroke: 0.4px;
+	-webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.4);
+	@include transition();
+
+	&:hover {
+		color:  $color__text-main;
+		border-color: #7d7d7d;
+	}
+
+}
+
+.links {
+	a {
+		position: relative;
+		font-family: $font__body;
+		font-size: 11px;
+		line-height: 13px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-decoration: none;
+		background-color: transparent;
+		color: $color__text-main;
+		padding: 8px 0;
+		margin: 0 10px;
+		@include transition();
+		border-bottom: 1px solid $color__border;
+		&:hover {
+			color:  $color__text-main;
+			border-color: #7d7d7d;
+		}
+	}
+}

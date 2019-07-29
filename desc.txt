@@ -1,0 +1,86 @@
+<h2>Meet Gutenkind</h2>
+<p>
+Gutenkind is a fresh faced blog & shop theme, tailored to showcase your content in an effortlessly timeless style. Beautiful typography, highly customizable, ability to mix and match page blocks and plenty of pre-made pages to quickly get you started. Gutenkind's clean, contemporary design is guaranteed to wow and inspire! We provide the greatest after-sales support ever and we try to respond as quickly as possible and provide the most efficient responses.
+</p>
+
+<h2>Feature List</h2>
+<ul>
+    <li>Complete Gutenberg Support</li>
+    <li>Custom Gutenberg Blocks</li>
+    <li>WordPress 5+ Support</li>
+    <li>WooCommerce Support</li>
+    <li>One Click Demo Import</li>
+    <li>Ultra Responsive Design</li>
+    <li>SEO Optimized</li>
+    <li>Powerful Mobile Menu</li>
+    <li>Post Block Layouts
+        <ul>
+            <li>List Layout</li>
+            <li>Grid Layout (2, 3 or 4 Columns)</li>
+            <li>Masonry Layout (Responsive Columns)</li>
+            <li>Classic Layout</li>
+            <li>Mixed Layout</li>
+            <li>Second Mixed Layout</li>
+        </ul>
+    </li>
+    <li>Post Block Navigation
+        <ul>
+            <li>Classic Links</li>
+            <li>Numbered Pagination</li>
+            <li>Prev/Next Buttons<li>
+            <li>Load More Button (AJAX)</li>
+            <li>Infinite Scroll Load</li>
+        </ul>
+    </li>
+    <li>Smooth Sticky Sidebar</li>
+    <li>Sticky Header Navigation</li>
+    <li>Multiple Archive Layouts</li>
+    <li>4 Archive Pagination</li>
+	<li>Lazy Load Image Loading</li>
+    <li>10 Header Layouts</li>
+    <li>Sidebar Position Options</li>
+    <li>9 Custom Featured Slider Blocks</li>
+    <li>6 Layout Post Blocks</li>
+    <li>7 Blocks for Selected Posts</li>
+    <li>Promo Boxes Block</li>
+    <li>Ability to display Latest, Trending, Specific Category or specific posts inside blocks</li>
+    <li>Block Spacing Settings</li>
+	<li>800+ Google Fonts to choose from</li>
+    <li>Excerpt Length Control</li>
+    <li>Typography And Color Options</li>
+    <li>Show/Hide Most Elements</li>
+	<li>Retina Ready Icons & Graphics</li>
+	<li>Child Theme Included</li>
+	<li>Social Media Buttons</li>
+	<li>Display Post Author, Date, Comments, Views & Read Time</li>
+	<li>Embed Video Support</li>
+	<li>Lightbox Image Zoom</li>
+	<li>Custom 404 Page</li>
+	<li>Custom Search Results Page</li>
+	<li>Widgetized Footer</li>
+    <li>Theme Options Powered by WordPress Customizer</li>
+	<li>MailChimp Support</li>
+    <li>Support for Contact Form 7</li>
+    <li>Social Media Icons</li>
+    <li>Retina Ready Icons & Graphics</li>
+	<li>Custom Widgets</li>
+	<li>Post & Page Featured Images</li>
+	<li>Highly Customizable</li>
+    <li>Elegant Full Width Instagram Feed In Footer</li>
+    <li>Custom About Me Widget</li>
+    <li>Custom Social Widget</li>
+    <li>Custom Latest Posts</li>
+    <li>Custom Trending Posts</li>
+    <li>Custom Instagram Widget</li>
+    <li>Translation Ready</li>
+    <li>Detailed Documentation</li>
+    <li>Amazing After-Sales Support</li>
+
+</ul>
+
+<p><strong>Version 1.0.0</strong> (June 4, 2019)</p>
+<pre>
+    - 
+    - 
+    - 
+</pre>

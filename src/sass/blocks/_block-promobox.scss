@@ -1,0 +1,39 @@
+.block-promobox {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: $color__bg_light;
+	position: relative;
+    display: table;
+    width: 100%;
+    height: 220px;
+    padding: 0 15px;
+    margin-top: 30px;
+	a {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		.promobox-inner {
+			position: relative;
+			//min-width: 163px;
+			padding: 17px 40px;
+			display: inline-block;
+			background: rgba(255,255,255,0.9);
+			@include transition();
+			p {
+				border: none;
+				margin: 5px 0 2px;
+				padding: 0;
+			}
+			h4 {
+				margin: 0;
+			}
+
+		}
+	}
+	&:hover {
+		.promobox-inner {
+			background: rgba(255,255,255,1);
+		}
+	}
+}
