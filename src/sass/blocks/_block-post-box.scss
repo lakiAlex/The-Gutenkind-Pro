@@ -360,7 +360,7 @@
 
 				.post-media {
 					img {
-						@include transition();
+						transition: $transition;
 
 						&:hover {
 							opacity: 0.8;

@@ -151,7 +151,6 @@ h6 {
 }
 
 a {
-	@include link-transition;
 	color: $color__link;
 
 	&:hover,

@@ -63,7 +63,7 @@
 		height: 20px;
 		fill: #d8d8d8;
 		stroke: #d8d8d8;
-		@include transition();
+		transition: $transition;
 	}
 	svg:hover {
 		fill: #000;

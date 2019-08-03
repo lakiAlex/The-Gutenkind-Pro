@@ -29,11 +29,6 @@ object {
 	width: calc(2.25 * #{$size__spacing-unit});
 }
 
-svg {
-	transition: fill $icon_transition ease-in-out;
-	fill: currentColor;
-}
-
 /* Lazy Load */
 .voss-lazy {
 	display: block;

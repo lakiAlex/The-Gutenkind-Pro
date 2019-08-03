@@ -103,7 +103,7 @@ h2.voss-h2-xl {
 		img {
 			border-radius: 4px;
 			box-shadow: 0 22px 70px rgba(0, 0, 0, 0.13);
-			@include transition();
+			transition: $transition;
 		}
 		&:hover {
 			img {

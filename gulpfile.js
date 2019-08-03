@@ -37,7 +37,7 @@ function css() {
 		.pipe(
 			postcss([
 				autoprefixer({
-					browsers: ["last 99 versions"],
+					//browsers: ["last 99 versions"],
 					cascade: false
 				})
 			])

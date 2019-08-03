@@ -22,7 +22,7 @@ body {
 
 a {
 	color: $color__text-main;
-	@include transition();
+	transition: $transition;
 }
 
 a:hover,
@@ -37,7 +37,7 @@ a:focus {
 	text-decoration: none;
 	opacity: .6;
 
-	@include transition();
+	transition: $transition;
 }
 
 a svg:hover,

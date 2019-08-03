@@ -350,8 +350,9 @@
 }
 
 .discussion-avatar-list {
-	@include clearfix;
-
+	content: "";
+	display: table;
+	table-layout: fixed;
 	margin: 0;
 	padding: 0;
 

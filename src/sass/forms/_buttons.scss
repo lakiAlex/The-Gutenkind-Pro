@@ -15,7 +15,7 @@ a.button,
 	// }
 
 	display: inline-block;
-	@include button-transition;
+	transition: $transition;
 	//background: $color__background-button;
 	border: none;
 	border-radius: 0px;
@@ -65,7 +65,6 @@ a.button,
 	&.is-style-outline .wp-block-button__link,
 	&.is-style-outline .wp-block-button__link:focus,
 	&.is-style-outline .wp-block-button__link:active {
-		@include button-all-transition;
 		border-width: 2px;
 		border-style: solid;
 
@@ -87,7 +86,7 @@ a.button,
 
 .wp-block-button__link {
 	background-color: #000;
-	@include transition();
+	transition: $transition;
 	&:hover {
 		transform: translateY(-5px);
 		opacity: .8;
@@ -109,7 +108,7 @@ a.button,
 	color: $color__text-main;
 	-webkit-text-stroke: 0.4px;
 	-webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.4);
-	@include transition();
+	transition: $transition;
 
 	&:hover {
 		color:  $color__text-main;
@@ -132,7 +131,7 @@ a.button,
 		color: $color__text-main;
 		padding: 8px 0;
 		margin: 0 10px;
-		@include transition();
+		transition: $transition;
 		border-bottom: 1px solid $color__border;
 		&:hover {
 			color:  $color__text-main;

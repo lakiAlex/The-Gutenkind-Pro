@@ -19,7 +19,7 @@
 			padding: 17px 40px;
 			display: inline-block;
 			background: rgba(255,255,255,0.9);
-			@include transition();
+			transition: $transition;
 			p {
 				border: none;
 				margin: 5px 0 2px;

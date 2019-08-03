@@ -6,12 +6,14 @@
 .comment-content:after,
 .footer:before,
 .footer:after {
-	@include clearfix;
+	content: "";
+	display: table;
+	table-layout: fixed;
 }
 
 .clear:after,
 .entry-content:after,
 .comment-content:after,
 .footer:after {
-	@include clearfix-after;
+	clear: both;
 }

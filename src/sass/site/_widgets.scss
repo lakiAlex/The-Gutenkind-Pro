@@ -432,7 +432,7 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			@include transition();
+			transition: $transition;
 			> div {
 				position: absolute;
 				display: block;
@@ -502,7 +502,6 @@
 			margin: 0 0 10px;
 			@include antialiased();
 		}
-		//@include nestedSubMenuPadding();
 	}
 }
 
@@ -531,7 +530,7 @@
 			letter-spacing: 1px;
 			padding: 5px 12px;
 			color: #333;
-			@include transition();
+			transition: $transition;
 		}
 
 		a:hover {

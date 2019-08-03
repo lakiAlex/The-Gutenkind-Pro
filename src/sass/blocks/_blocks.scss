@@ -634,7 +634,7 @@
 
 		.wp-block-file__button {
 			display: table;
-			@include button-transition;
+			transition: $transition;
 			border: none;
 			border-radius: 5px;
 			background: $color__background-button;
@@ -1049,7 +1049,7 @@
 	.post-media {
 		img {
 			vertical-align: top;
-			@include transition();
+			transition: $transition;
 		}
 		&:hover {
 			a img {
@@ -1372,7 +1372,7 @@
 		}
 		&:after {
 		    background-color: rgba(0,0,0,0.12);
-			@include transition();
+			transition: $transition;
 		}
 		&:hover {
 			&:after {
