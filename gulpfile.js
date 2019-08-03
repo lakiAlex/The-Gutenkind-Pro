@@ -15,6 +15,7 @@ const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const concat = require("gulp-concat");
 const rename = require("gulp-rename");
+const clean = require("gulp-clean");
 
 const wpPot = require("gulp-wp-pot");
 const gulpZip = require("gulp-zip");
@@ -63,7 +64,7 @@ function jsVendor() {
 	return src("./src/js/vendor/*.js")
 		.pipe(concat("vendor.min.js"))
 		.pipe(uglify())
-		.pipe(dest("./src/js/bundle/"))
+		.pipe(dest("./src/js/temp/"))
 		.pipe(browsersync.stream());
 }
 
@@ -75,13 +76,13 @@ function jsMain() {
         }))
 		.pipe(uglify())
 		.pipe(rename('main.min.js'))
-		.pipe(dest("./src/js/bundle/"))
+		.pipe(dest("./src/js/temp/"))
 		.pipe(browsersync.stream());
 }
 
 // Concate all scripts
 function js() {
-	return src(["./src/js/bundle/vendor.min.js", "./src/js/bundle/main.min.js"])
+	return src(["./src/js/temp/vendor.min.js", "./src/js/temp/main.min.js"])
 		.pipe(concat("main.min.js"))
 		.pipe(dest("./dist/js/"))
 		.pipe(browsersync.stream());
@@ -142,7 +143,7 @@ function watchFiles() {
 	watch("./src/js/admin.js", series(jsAdmin));
 	watch("./src/js/vendor/*", series(jsVendor));
 	watch("./src/js/main.js", series(jsMain));
-	watch("./src/js/bundle/*", series(js));
+	watch("./src/js/temp/*", series(js));
 }
 
 // Export tasks

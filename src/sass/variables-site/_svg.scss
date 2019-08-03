@@ -1,27 +1,3 @@
 svg.hidden {
     display: none;
 }
-.header {
-    svg {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      stroke-width: .3;
-      //stroke-width: 0;
-    }
-    //.voss-social svg {
-        //width: 12px;
-        //height: 13px;
-        //vertical-align: -1px;
-    //}
-}
-.header__search svg {
-    width: 15px;
-    height: 15px;
-    stroke-width: .4;
-}
-.header__cart svg {
-    width: 15px;
-    height: 15px;
-    stroke-width: .2;
-}
