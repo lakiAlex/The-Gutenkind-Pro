@@ -3438,34 +3438,6 @@ body.page .main-navigation {
   }
 }
 
-.entry-content > *.aligncenter,
-.entry-summary > *.aligncenter {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .entry-content > *.aligncenter,
-  .entry-summary > *.aligncenter {
-    max-width: calc(8 * (100vw / 12) - 28px);
-  }
-}
-
-@media only screen and (min-width: 1168px) {
-  .entry-content > *.aligncenter,
-  .entry-summary > *.aligncenter {
-    max-width: calc(6 * (100vw / 12) - 28px);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .entry-content > *.aligncenter,
-  .entry-summary > *.aligncenter {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
 /*
  * Unset nested content selector styles
  * - Prevents layout styles from cascading too deeply

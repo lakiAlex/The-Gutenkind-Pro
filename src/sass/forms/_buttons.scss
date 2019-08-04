@@ -3,8 +3,7 @@ input[type="reset"],
 input[type="submit"],
 .button,
 a.button,
-.btn,
-.wp-block-button__link {
+.btn {
 
 	// &:not(.has-background) {
 	// 	background-color: $color__background-button;
@@ -87,6 +86,21 @@ a.button,
 .wp-block-button__link {
 	background-color: #000;
 	transition: $transition;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 34px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	outline: none;
+	padding: 4px 30px 3px;
+	text-decoration: none;
+	vertical-align: bottom;
+	box-shadow: none;
+	height: auto;
+	text-rendering: optimizeLegibility!important;
+	-webkit-font-smoothing: antialiased!important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 	&:hover {
 		transform: translateY(-5px);
 		opacity: .8;

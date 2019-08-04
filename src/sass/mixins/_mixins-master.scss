@@ -9,22 +9,6 @@
 	width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
 }
 
-/* Calculates maximum width for post content */
-@mixin postContentMaxWidth() {
-
-	@include media(phone) {
-		max-width: $size__site-phone-content;
-	}
-
-	@media (min-width: 992px) {
-		max-width: $size__site-tablet-content;
-	}
-
-	@include media(desktop) {
-		max-width: $size__site-desktop-content;
-	}
-}
-
 /* Nested sub-menu padding: 10 levels deep */
 @mixin nestedSubMenuPadding() {
 

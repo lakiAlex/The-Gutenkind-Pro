@@ -631,7 +631,6 @@ ul.wp-block-archives,
 
 	ul {
 		padding-top: ( .75 * $size__spacing-unit );
-		@include nestedSubMenuPadding();
 	}
 
 	li ul {

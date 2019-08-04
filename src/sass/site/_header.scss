@@ -508,6 +508,15 @@
 							left: 100%;
 							top: -16px;
 							margin-left: 0;
+							.sub-menu {
+								left: 100%;
+								top: -16px;
+								margin-left: 0;
+								.sub-menu {
+									left: 0;
+									top: 32px;
+								}
+							}
 						}
 					}
 					.voss-mega-menu {

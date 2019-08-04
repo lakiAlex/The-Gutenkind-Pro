@@ -1850,12 +1850,12 @@ if (class_exists('kirki')) {
 		'output'    => array(
 			array(
 				'choice'    => 'default',
-				'element'   => '.single .entry-content a',
+				'element'   => '.single .entry-content p a',
 				'property'  => 'color',
 			),
 			array(
 				'choice'    => 'hover',
-				'element'   => '.single .entry-content a:hover',
+				'element'   => '.single .entry-content p a:hover',
 				'property'  => 'color',
 			),
 		),
@@ -1872,8 +1872,8 @@ if (class_exists('kirki')) {
 			'hover'     => esc_html__( 'Hover', 'gutenkind' ),
 		),
 		'default'     => array(
-			'default'   => '#bfbfbf',
-			'hover'     => '#bfbfbf',
+			'default'   => 'rgba(119, 119, 119, 0.1)',
+			'hover'     => 'rgba(119, 119, 119, 0.1)',
 		),
 		'output'    => array(
 			array(
