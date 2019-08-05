@@ -408,7 +408,7 @@ textarea {
 .comment-metadata,
 .comment-reply-link,
 .comments-title,
-.comment-author .fn,
+.comment__author .fn,
 .discussion-meta-info,
 .entry-meta,
 .entry-footer,
@@ -442,7 +442,7 @@ h6 {
 .post-navigation .post-title,
 .pagination .nav-links,
 .comments-title,
-.comment-author .fn,
+.comment__author .fn,
 .no-comments,
 .site-title,
 h1,
@@ -511,7 +511,7 @@ h3 {
 .nav-links,
 .page-title,
 .page-description,
-.comment-author .fn,
+.comment__author .fn,
 .no-comments,
 h2.author-title,
 p.author-bio,
@@ -2768,7 +2768,7 @@ body.page .main-navigation {
   position: relative;
 }
 
-#respond .comment-user-avatar {
+#respond .comment__avatar {
   margin: 1rem 0 -1rem;
 }
 
@@ -2882,14 +2882,14 @@ body.page .main-navigation {
   position: relative;
 }
 
-.comment .comment-author .avatar {
+.comment .comment__author .avatar {
   float: right;
   margin-left: 1rem;
   position: relative;
 }
 
 @media only screen and (min-width: 768px) {
-  .comment .comment-author .avatar {
+  .comment .comment__author .avatar {
     float: inherit;
     margin-left: inherit;
     position: absolute;
@@ -2898,20 +2898,20 @@ body.page .main-navigation {
   }
 }
 
-.comment .comment-author .fn {
+.comment .comment__author .fn {
   position: relative;
   display: block;
 }
 
-.comment .comment-author .fn a {
+.comment .comment__author .fn a {
   color: inherit;
 }
 
-.comment .comment-author .fn a:hover {
+.comment .comment__author .fn a:hover {
   color: #005177;
 }
 
-.comment .comment-author .post-author-badge {
+.comment .comment__author .post-author-badge {
   border-radius: 100%;
   display: block;
   height: 18px;
@@ -2923,12 +2923,12 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .comment .comment-author .post-author-badge {
+  .comment .comment__author .post-author-badge {
     left: calc(100% + 0.75rem);
   }
 }
 
-.comment .comment-author .post-author-badge svg {
+.comment .comment__author .post-author-badge svg {
   width: inherit;
   height: inherit;
   display: block;
@@ -3042,7 +3042,7 @@ body.page .main-navigation {
   float: right;
 }
 
-.discussion-avatar-list .comment-user-avatar img {
+.discussion-avatar-list .comment__avatar img {
   height: calc(1.5 * 1rem);
   width: calc(1.5 * 1rem);
 }

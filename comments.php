@@ -9,13 +9,13 @@ $discussion = gutenkind_get_discussion_data();
 ?>
 
 <div class="comments-show-btn">
-	<button class="btn has-background <?php if (have_comments() || is_page()) echo esc_html('active'); ?>">
+	<button class="btn has-background <?php if (have_comments() || !is_single()) echo esc_html('active'); ?>">
 		<span class="on"><?php esc_html_e('Show Comments +', 'gutenkind'); ?></span>
 		<span class="off"><?php esc_html_e('Hide Comments -', 'gutenkind'); ?></span>
 	</button>
 </div>
 
-<div id="comments" class="comments-area <?php if (have_comments() || is_page()) echo esc_html('--has-comments'); ?>">
+<div id="comments" class="comments-area <?php if (have_comments() || !is_single()) echo esc_html('--has-comments'); ?>">
 
 	<div class="comments-title-wrap">
 		<h4 class="comments-title single-section-title">

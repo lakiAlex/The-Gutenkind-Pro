@@ -27,7 +27,7 @@ function gutenkind_menu_arrows($item_output, $item, $depth, $args) {
 add_filter('walker_nav_menu_start_el', 'gutenkind_menu_arrows', 10, 4);
 
 /**
- * Enqueue CF 7 for shortcode only
+ * Enqueue CF7 script and stylesheet only on pages where shortcode is present
  */
 function contactform_dequeue_scripts() {
     $load_scripts = false;
@@ -88,7 +88,7 @@ function gutenkind_meta_author() {
 	$post = get_post();
 	$author_id = $post->post_author;
 	printf(
-		'<span class="meta-author byline"><span class="author vcard"><a class="url fn n" href="%2$s">%3$s %4$s</a></span></span>',
+		'<span class="meta-author byline"><span class="author"><a class="url fn n" href="%2$s">%3$s %4$s</a></span></span>',
 		esc_html__('Posted by', 'gutenkind'),
 		get_author_posts_url($author_id),
 		esc_html__('by', 'gutenkind'),
@@ -451,13 +451,13 @@ function gutenkind_get_discussion_data() {
  */
 function gutenkind_get_user_avatar_markup($id_or_email = null) {
 	if (!isset($id_or_email)) $id_or_email = get_current_user_id();
-	return sprintf('<div class="comment-user-avatar comment-author vcard">%s</div>', get_avatar($id_or_email, '60'));
+	return sprintf('<div class="comment__avatar comment__author">%s</div>', get_avatar($id_or_email, '60'));
 }
 
-function gutenkind_discussion_avatars_list( $comment_authors ) {
+function gutenkind_discussion_avatars_list($comment_authors) {
 	if (empty($comment_authors)) return;
 	echo '<ol class="discussion-avatar-list">', "\n";
-	foreach ( $comment_authors as $id_or_email ) {
+	foreach ($comment_authors as $id_or_email) {
 		printf(
 			"<li>%s</li>\n",
 			gutenkind_get_user_avatar_markup($id_or_email)

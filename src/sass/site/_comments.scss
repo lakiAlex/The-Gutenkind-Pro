@@ -79,7 +79,7 @@
 #respond {
 	position: relative;
 
-	.comment-user-avatar {
+	.comment__avatar {
 		margin: $size__spacing-unit 0 -#{$size__spacing-unit};
 	}
 
@@ -200,7 +200,7 @@
 		position: relative;
 	}
 
-	.comment-author {
+	.comment__author {
 
 		.avatar {
 			float: left;
@@ -364,7 +364,7 @@
 		float: left;
 	}
 
-	.comment-user-avatar {
+	.comment__avatar {
 
 		img {
 			height: calc(1.5 * #{$size__spacing-unit});

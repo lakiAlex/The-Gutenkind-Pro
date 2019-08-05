@@ -257,7 +257,7 @@ require_once get_parent_theme_file_path('/inc/theme-setup/merlin-config.php');
 
 require get_parent_theme_file_path('/inc/theme-customizer.php');
 require get_parent_theme_file_path('/inc/theme-fields.php');
-require get_template_directory() . '/inc/theme-functions.php';
+require get_parent_theme_file_path('/inc/theme-functions.php');
 
 /**
  * Theme content width
