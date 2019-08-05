@@ -947,7 +947,7 @@ if (class_exists('kirki')) {
 		),
 		'output'      => array(
 			array(
-				'element' => 'body, .block-title-sm h4, .woocommerce-checkout .woocommerce #ship-to-different-address, .woocommerce.single div.product .related.products > h2, .woocommerce-page.single div.product .related.products > h2',
+				'element' => 'body, .block__title-sm h4, .woocommerce-checkout .woocommerce #ship-to-different-address, .woocommerce.single div.product .related.products > h2, .woocommerce-page.single div.product .related.products > h2',
 			),
 		),
 	));

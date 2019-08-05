@@ -142,7 +142,7 @@
 
 	function vossenSliders() {
 
-		$('.voss-slider').each(function() {
+		$('.vslider').each(function() {
 			var vossSlider = $(this),
 				dataStyle = vossSlider.data('style'),
 				dataColumns = vossSlider.data('columns'),

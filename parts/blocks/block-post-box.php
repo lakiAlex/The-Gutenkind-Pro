@@ -70,15 +70,15 @@ $i = 0;
 // Loop
 if( $posts->have_posts() ) : ?>
 
-<div class="block-posts-grid <?php echo esc_html($align); ?>" <?php echo esc_html(implode('', $styles)); ?> data-style="<?php echo esc_attr($style) ?>">
+<div class="block__post-box <?php echo esc_html($align); ?>" <?php echo esc_html(implode('', $styles)); ?> data-style="<?php echo esc_attr($style) ?>">
     <?php
         if ($title) { ?>
-            <div class="block-title-sm">
+            <div class="block__title-sm">
                 <h4><?php echo esc_html($title); ?></h4>
             </div><?php
         }
     ?>
-    <div class="block-posts-grid-wrap">
+    <div class="block__post-box-wrap">
         <div>
         <?php
             while ( $posts->have_posts() ) : $posts->the_post();

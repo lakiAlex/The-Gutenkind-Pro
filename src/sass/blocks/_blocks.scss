@@ -1625,7 +1625,7 @@
 	margin: 50px 0 0;
 }
 
-.block-title {
+.block__title {
 	&.text-center {
 		margin-bottom: 40px;
 		h3 {
@@ -1639,14 +1639,14 @@
 			height: 1px;
 			width: 51px;
 		}
-		.block-link {
+		.block__link {
 			font-size: 10.1px;
 			padding-bottom: 6px;
 		}
 	}
 }
 
-.block-title {
+.block__title {
 	&.text-left,
 	&.text-right {
 		@include flex();
@@ -1657,7 +1657,7 @@
 			margin-top: 0;
 			margin-bottom: 0;
 		}
-		.block-link {
+		.block__link {
 			position: relative;
 			padding-top: 13px;
 			padding-bottom: 6px;
@@ -1670,7 +1670,7 @@
 		flex-direction: row-reverse;
 	}
 }
-.block-title-sm {
+.block__title-sm {
 	margin-top: 0;
 	margin-bottom: 40px;
 	text-align: center;

@@ -129,12 +129,12 @@ $posts = new WP_Query( $args );
 
 if( $posts->have_posts() ) : ?>
 
-        <div class="voss-slider swiper-scale-effect <?php echo esc_html($align); ?>" <?php echo implode(' ', $attr); ?>>
+        <div class="vslider <?php echo esc_html($align); ?>" <?php echo implode(' ', $attr); ?>>
 
             <?php if ($title == true) { ?>
-                <div class="block-title <?php echo esc_html($title_align); ?>">
+                <div class="block__title <?php echo esc_html($title_align); ?>">
                     <h3><?php echo esc_html($title_text); ?></h3>
-                    <a class="block-link link" href="<?php echo esc_url($subtitle_link); ?>"><?php echo esc_html($subtitle_text); ?></a>
+                    <a class="block__link link" href="<?php echo esc_url($subtitle_link); ?>"><?php echo esc_html($subtitle_text); ?></a>
                 </div>
             <?php } ?>
 

@@ -103,9 +103,9 @@ $styles[] = 'margin-bottom:'.gutenkind_field('block-latest-mb').'px;';
     <div class="voss-posts-content">
 
         <?php if ($title == true) { ?>
-            <div class="block-title <?php echo esc_html($title_align); ?>">
+            <div class="block__title <?php echo esc_html($title_align); ?>">
                 <h3><?php echo esc_html($title_text); ?></h3>
-                <a class="block-link link" href="<?php echo esc_url($subtitle_link); ?>"><?php echo esc_html($subtitle_text); ?></a>
+                <a class="block__link link" href="<?php echo esc_url($subtitle_link); ?>"><?php echo esc_html($subtitle_text); ?></a>
             </div>
         <?php } ?>
 

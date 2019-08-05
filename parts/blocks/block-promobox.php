@@ -9,9 +9,9 @@ $subheading = gutenkind_field('promobox-subheading');
 
 ?>
 
-<div class="block-promobox" <?php echo esc_html(implode('', $styles)); ?>>
+<div class="block__promobox" <?php echo esc_html(implode('', $styles)); ?>>
     <a href="<?php echo esc_url($url); ?>" <?php if ($target == true) { ?>target="_blank"<?php } ?>>
-        <div class="promobox-inner">
+        <div class="block__promobox-inner">
             <p class="link"><?php echo esc_html($subheading); ?></p>
             <h4><?php echo esc_html($heading); ?></h4>
         </div>

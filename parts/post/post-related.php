@@ -6,7 +6,7 @@ if( $related->have_posts() ) : ?>
 	<div class="single-related">
 		<h4 class="section-title"><?php esc_html_e( 'Related Stories', 'gutenkind' ); ?></h4>
 
-		<div class="voss-slider"
+		<div class="vslider"
 			data-style="9"
 			data-columns="3"
 			data-columns-md="3"
