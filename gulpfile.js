@@ -53,7 +53,7 @@ function jsAdmin() {
 		.pipe(babel({
             presets: ['@babel/env']
         }))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(rename('admin.min.js'))
 		.pipe(dest("./dist/js/"))
 		.pipe(browsersync.stream());
