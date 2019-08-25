@@ -236,8 +236,7 @@ $border: rgba(119,119,119,0.155);
 			}
 		}
 	}
-	.scroll-top {
-		display: none;
+	.scroll__top {
 		background: #000000;
 	    color: #fff;
 	    position: fixed;
@@ -254,8 +253,11 @@ $border: rgba(119,119,119,0.155);
 	    letter-spacing: 2px;
 	    padding-top: 15px;
 	    cursor: pointer;
-		transform: translateZ(0);
-		transition: none;
+		transition: $transition;
+		transform: translateY(50px);
+		&.--active {
+			transform: translateY(0);
+		}
 		@media (max-width: 1330px) {
 			right: 30px;
 		}

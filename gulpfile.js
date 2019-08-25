@@ -71,10 +71,10 @@ function jsVendor() {
 // Compile, minify and rename main script
 function jsMain() {
 	return src("./src/js/main.js")
-		.pipe(babel({
-            presets: ['@babel/env']
-        }))
-		.pipe(uglify())
+		// .pipe(babel({
+        //     presets: ['@babel/env']
+        // }))
+		//.pipe(uglify())
 		.pipe(rename('main.min.js'))
 		.pipe(dest("./src/js/temp/"))
 		.pipe(browsersync.stream());

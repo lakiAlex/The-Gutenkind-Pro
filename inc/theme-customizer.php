@@ -2053,7 +2053,7 @@ if (class_exists('kirki')) {
 		'default'     => '#080808',
 		'output' => array(
 			array(
-				'element'  => '.footer .scroll-top',
+				'element'  => '.footer .scroll__top',
 				'property' => 'background-color',
 			),
 		),
@@ -2067,7 +2067,7 @@ if (class_exists('kirki')) {
 		'default'     => '#fff',
 		'output' => array(
 			array(
-				'element'  => '.footer .scroll-top svg',
+				'element'  => '.footer .scroll__top svg',
 				'property' => 'fill',
 			),
 		),

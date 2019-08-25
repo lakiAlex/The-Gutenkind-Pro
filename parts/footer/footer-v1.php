@@ -107,7 +107,7 @@ $sroll_top						= get_theme_mod( 'scroll-top', true);
 		</div>
 
 		<?php if ($sroll_top == true) { ?>
-			<a href="#" class="scroll-top"><?php get_template_part('/dist/svg/svg', 'up'); ?></a>
+			<a href="#" class="scroll__top"><?php get_template_part('/dist/svg/svg', 'up'); ?></a>
 		<?php } ?>
 
 </footer>
