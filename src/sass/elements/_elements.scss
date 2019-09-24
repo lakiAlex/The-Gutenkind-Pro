@@ -40,10 +40,13 @@ a:focus {
 	transition: $transition;
 }
 
-a svg:hover,
-a svg:active {
-	fill: $color__link-hover;
-	stroke: $color__link-hover;
+a svg {
+	transition: $transition;
+	&:hover,
+	&:active {
+		fill: $color__link-hover;
+		stroke: $color__link-hover;
+	}
 }
 
 h1,

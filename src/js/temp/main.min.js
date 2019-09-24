@@ -119,25 +119,22 @@
 		});
 	}
 
-	function vossenDataAttr() {
-		$('[data-bg]').each(function() {
-			var attr = $(this).attr('data-bg');
+	function vossenDataAttr() {		
+	
+		const dataBg = document.querySelectorAll('[data-bg]');
+		dataBg.forEach( function(el) {
+			const attr = el.getAttribute('data-bg');
 			if (attr !== '') {
-				$(this).append('<div class="data-bg-wrap"></div>');
-				$(this).find('.data-bg-wrap').css({
-					'background-image': 'url(' + attr + ')'
-				}).animate({
-					opacity: '1'
-				}, 1000);
-			}
+				const dataBgWrap = document.createElement('div');
+				dataBgWrap.classList.add('data-bg-wrap');
+				dataBgWrap.style.backgroundImage = 'url('+ attr +')';
+				el.appendChild(dataBgWrap);
+				setTimeout( function() {
+					dataBgWrap.style.opacity = '1';
+				}, 250);
+			}  
 		});
-		
-		// const dataBg = document.querySelectorAll('[data-bg]');
-		// dataBg.forEach( function(el) {
-		// 	var attr = el.getAttribute('data-bg')
-		// 	el.style.backgroundImage = 'url('+ attr +')';
-		// });
-		
+		 
 		const dataColor = document.querySelectorAll('[data-color]');
 		dataColor.forEach( function(el) {
 			var attr = el.getAttribute('data-color')
@@ -225,131 +222,70 @@
 	}
 
 	function vossenMasonry() {
-
-		// init Masonry
-		// $('.voss-posts').imagesLoaded().progress(function() {
-
-		// 	var order = $('.voss-layout-masonry').attr('data-col'),
-		// 		horizontalOrder = false;
-		// 	if (order === '3' && $(window).width() > 992) {
-		// 		horizontalOrder = true;
-		// 	}
-
-		// 	var grid = $('.voss-layout-masonry').masonry({
-		// 		columnWidth: '.post',
-		// 		itemSelector: '.post',
-		// 		horizontalOrder: horizontalOrder,
-		// 	});
-
-		// 	// set Infinite Scroll
-		// 	if ($('.voss-ajax-load').length || $('.voss-ajax-infinite').length) {
-
-		// 		// get Load method
-		// 		var scroll;
-		// 		if ($('.voss-posts').hasClass('voss-ajax-load')) {
-		// 			scroll = false;
-		// 		} else if ($('.voss-posts').hasClass('voss-ajax-infinite')) {
-		// 			scroll = 100;
-		// 		}
-
-		// 		// get Masonry instance
-		// 		var msnry = grid.data('masonry');
-
-		// 		// get Layout
-		// 		var el = $('.voss-layout'),
-		// 			outlayer;
-		// 		if ($('.voss-layout').hasClass('voss-layout-masonry')) {
-		// 			el = grid;
-		// 			outlayer = msnry;
-		// 		}
-
-		// 		// init Infinite Scroll
-		// 		el.infiniteScroll({
-		// 			path: '.voss-load-btn',
-		// 			append: '.post',
-		// 			button: '.voss-load-btn',
-		// 			scrollThreshold: scroll,
-		// 			status: '.page-load-status',
-		// 			checkLastPage: true,
-		// 			history: true,
-		// 			outlayer: outlayer,
-		// 		});
-
-		// 		el.on('append.infiniteScroll', function(event, response, path, items) {
-		// 			if (items.length == 0) {
-		// 				$('.infinite-scroll-request').remove();
-		// 				$('.voss-load-btn').remove();
-		// 				$('.page-load-status').show();
-		// 				$('.infinite-scroll-last').show();
-		// 				el.infiniteScroll('destroy');
-		// 			}
-		// 		});
-
-		// 	}
-
-		// });
 		
-		 
 		var posts = document.querySelectorAll('.voss-posts');
 		imagesLoaded( posts, function() {
 
-			var order = document.querySelector('.voss-layout-masonry').getAttribute('data-col');
-			console.log(order);
-			var horizontalOrder = false;
-			if (order === '3' && window.innerWidth > 992) {
-				horizontalOrder = true;
-			}
-			
 			var grid = document.querySelector('.voss-layout-masonry');
-			var msnry = new Masonry(grid, {
-				columnWidth: '.post',
-				itemSelector: '.post',
-				horizontalOrder: horizontalOrder,
-			});
-
-			// set Infinite Scroll
-			var vossPosts = document.querySelector('.voss-posts');
-			if (vossPosts.classList.contains('voss-ajax-load') || vossPosts.classList.contains('voss-ajax-infinite')) {
-
-				// get Load method
-				var scroll;
-				var vossPosts = document.querySelector('.voss-posts');
-				if (vossPosts.classList.contains('voss-ajax-load')) {
-					scroll = false;
-				} else if (vossPosts.classList.contains('voss-ajax-infinite')) {
-					scroll = 100;
+			
+			if (grid !== null) {
+			
+				var horizontalOrder = false;
+				if (grid !== null && grid.getAttribute('data-col') === '3' && window.innerWidth > 992) {
+					horizontalOrder = true;
 				}
 				
-				// get Layout
-				var el = document.querySelector('.voss-layout');
-				var outlayer;
-				if (el.classList.contains('voss-layout-masonry')) {
-					el = grid;
-					outlayer = msnry;
-				}
-
-				// init Infinite Scroll
-				var infScroll = new InfiniteScroll(el, {
-					path: '.voss-load-btn',
-					append: '.post',
-					button: '.voss-load-btn',
-					scrollThreshold: scroll,
-					status: '.page-load-status',
-					checkLastPage: true,
-					history: true,
-					outlayer: outlayer,
+				var msnry = new Masonry(grid, {
+					columnWidth: '.post',
+					itemSelector: '.post',
+					horizontalOrder: horizontalOrder,
 				});
-			 
-				infScroll.on('append', function(event, response, path, items) {
-					if (items === null && items.length == 0) {
-						document.querySelector('.infinite-scroll-request').style.display = 'none';
-						document.querySelector('.voss-load-btn').style.display = 'none';
-						document.querySelector('.page-load-status').style.display = 'block';
-						document.querySelector('.infinite-scroll-last').style.display = 'block';
-						el.infiniteScroll('destroy');
+	
+				// set Infinite Scroll
+				var vossPosts = document.querySelector('.voss-posts');
+				if (vossPosts.classList.contains('voss-ajax-load') || vossPosts.classList.contains('voss-ajax-infinite')) {
+	
+					// get Load method
+					var scroll;
+					var vossPosts = document.querySelector('.voss-posts');
+					if (vossPosts.classList.contains('voss-ajax-load')) {
+						scroll = false;
+					} else if (vossPosts.classList.contains('voss-ajax-infinite')) {
+						scroll = 100;
 					}
-				});
-
+					
+					// get Layout
+					var el = document.querySelector('.voss-layout');
+					var outlayer;
+					if (el.classList.contains('voss-layout-masonry')) {
+						el = grid;
+						outlayer = msnry;
+					}
+	
+					// init Infinite Scroll
+					var infScroll = new InfiniteScroll(el, {
+						path: '.voss-load-btn',
+						append: '.post',
+						button: '.voss-load-btn',
+						scrollThreshold: scroll,
+						status: '.page-load-status',
+						checkLastPage: true,
+						history: true,
+						outlayer: outlayer,
+					});
+				 
+					infScroll.on('append', function(event, response, path, items) {
+						if (items === null && items.length == 0) {
+							document.querySelector('.infinite-scroll-request').style.display = 'none';
+							document.querySelector('.voss-load-btn').style.display = 'none';
+							document.querySelector('.page-load-status').style.display = 'block';
+							document.querySelector('.infinite-scroll-last').style.display = 'block';
+							el.infiniteScroll('destroy');
+						}
+					});
+	
+				}
+				
 			}
 
 		});
@@ -658,7 +594,7 @@
 				el.insertAdjacentHTML('afterbegin', '<img src="'+ src +'" alt width="320" height="320"/>');
 			});
 			
-			container.style.display = 'block';
+			if (container !== null) container.style.display = 'block';
 		
 		}
 		

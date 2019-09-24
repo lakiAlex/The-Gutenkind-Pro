@@ -134,6 +134,7 @@ function gutenkind_scripts() {
 }
 add_action('wp_enqueue_scripts', 'gutenkind_scripts');
 
+
 function gutenkind_admin_scripts() {
 	wp_enqueue_style('gutenkind-admin-css', get_template_directory_uri() . '/style-admin.css', wp_get_theme()->get('Version'), false);
 	wp_enqueue_script('gutenkind-admin-js', get_template_directory_uri() . '/dist/js/admin.min.js', array('jquery'), wp_get_theme()->get('Version'), true);

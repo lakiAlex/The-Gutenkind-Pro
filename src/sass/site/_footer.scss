@@ -5,6 +5,14 @@ $border: rgba(119,119,119,0.155);
 	margin-top: 0;
 	border-top: 1px solid $border;
 	background-color: #000;
+	.p,
+	a,
+	label {
+		color: #e6e6e6;
+		&:hover {
+			color: #fff;
+		}
+	}
 	&__instagram {
 		position: relative;
 		background-color: #000;
@@ -138,6 +146,7 @@ $border: rgba(119,119,119,0.155);
 			font-size: 34px;
 			letter-spacing: 0;
 			margin: 0;
+			color: #fff;
 		}
 		p {
 			font-size: 12.8px;
@@ -171,6 +180,12 @@ $border: rgba(119,119,119,0.155);
 		border: none;
 		margin: 0;
 		padding: 0;
+		a {
+			color: #fff;
+			&:hover {
+				color: #bbbdbd;
+			}
+		}
 	}
 	.menu-footer {
 		@media (max-width: 992px) {
@@ -237,7 +252,7 @@ $border: rgba(119,119,119,0.155);
 		}
 	}
 	.scroll__top {
-		background: #000000;
+		background: #080808;
 	    color: #fff;
 	    position: fixed;
 	    bottom: 0;
